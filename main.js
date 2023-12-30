@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     let mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     let mobileMenu = document.querySelector('.mobile-menu');
+    let projectsBtn = document.querySelector('#projects-btn');
+    let projects = document.querySelector('#projects');
     let width;
 
     function handleResize() {
@@ -31,4 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', () => {
         handleResize();
     });
+
+    projectsBtn.addEventListener('click', () => {
+        projects.classList.remove('projects-hidden');
+    });
+    
 });
