@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"> 
     <script src="main.js"></script>
@@ -20,7 +21,7 @@
                 </div>
                 <div class="col-md-2">
                     <a href="#" data-text="HOME">Home</a>
-                    <a href="#" data-text="PROJECTS">Projects</a>
+                    <a href="#projects" data-text="PROJECTS" id="projects-btn">Projects</a>
                 </div>
                 <div class="col-md-4">
                     <h1>IME STRANICE</h1>
@@ -51,7 +52,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <a href="#" data-text="HOME">Home</a>
-                    <a href="#" data-text="PROJECTS">Projects</a>
+                    <a href="#" data-text="PROJECTS" id="projects-btn">Projects</a>
                     <a href="#" data-text="ABOUT">About</a>
                     <a href="#" data-text="CONTACT">Contact</a>
                 </div>
@@ -123,6 +124,124 @@
                                 <h5 class="card-title">Their name</h5>
                                 <p class="card-text">Helped fix bugs even after the business ended.</p>
                                 <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects projects-hidden" id="projects">
+            <div class="container-fluid">
+                <div class="projects-grid">
+                    <div class="project">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card" id="project-card">
+                                    <div id="topl"></div>
+                                    <div id="botr"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Website name</h5>
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                        <div class="row1">
+                                                <li><i class="fab fa-html5"></i></li>
+                                                <li><i class="fab fa-css3"></i></li>
+                                                <li><i class="fab fa-bootstrap"></i></li>
+                                                <li><i class="fab fa-js"></i></li> 
+                                        </div>
+                                        <div class="row2">
+                                            <a href="#"><i class="fab fa-github"></i></a>
+                                            <a href="#"><i class="fas fa-globe"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 bg"> 
+                                <div class="modal fade" id="portfolioModal" aria-hidden="true" aria-labelledby="portfolioModalLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                      <div class="modal-content">
+                                        <div class="modal-body" style="padding: 0;">
+                                          <img src="images/longPortfolio.png" style="width: 100%; height: 100%; position: relative;">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- 2nd-->
+                                  <button class="imgBtn btn1" data-bs-target="#portfolioModal" data-bs-toggle="modal"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card" id="project-card">
+                                    <div id="topl"></div>
+                                    <div id="botr"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Website name</h5>
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                        <div class="row1">
+                                                <li><i class="fab fa-html5"></i></li>
+                                                <li><i class="fab fa-css3"></i></li>
+                                                <li><i class="fab fa-bootstrap"></i></li>
+                                                <li><i class="fab fa-js"></i></li> 
+                                        </div>
+                                        <div class="row2">
+                                            <a href="#"><i class="fab fa-github"></i></a>
+                                            <a href="#"><i class="fas fa-globe"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8"> 
+                                <div class="modal fade" id="lagomModal" aria-hidden="true" aria-labelledby="lagomModalLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                      <div class="modal-content">
+                                        <div class="modal-body" style="padding: 0;">
+                                          <img src="images/longLagom.png" style="width: 100%; height: 100%; position: relative;">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- 2nd-->
+                                  <button class="imgBtn btn2" data-bs-target="#lagomModal" data-bs-toggle="modal"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card" id="project-card">
+                                    <div id="topl"></div>
+                                    <div id="botr"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Website name</h5>
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                        <div class="row1">
+                                                <li><i class="fab fa-html5"></i></li>
+                                                <li><i class="fab fa-css3"></i></li>
+                                                <li><i class="fab fa-bootstrap"></i></li>
+                                                <li><i class="fab fa-js"></i></li> 
+                                        </div>
+                                        <div class="row2">
+                                            <a href="#"><i class="fab fa-github"></i></a>
+                                            <a href="#"><i class="fas fa-globe"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8"> 
+                                <div class="modal fade" id="firwlModal" aria-hidden="true" aria-labelledby="firwlModalLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                      <div class="modal-content">
+                                        <div class="modal-body" style="padding: 0;">
+                                          <img src="images/longFirwl.png" style="width: 100%; height: 100%; position: relative;">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- 2nd-->
+                                  <button class="imgBtn btn3" data-bs-target="#firwlModal" data-bs-toggle="modal"></button>
                             </div>
                         </div>
                     </div>
