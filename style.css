@@ -406,8 +406,14 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 8px;
+    padding: 32px;
 }
+
+.projects .card-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
 
 .projects .card .row1 {
     display: flex;
@@ -448,6 +454,30 @@ html, body {
 
 .projects .card a:hover {
     opacity: 1;
+}
+
+@media screen and (max-width: 1400px) {
+    .projects .card-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .projects .card-text {
+        font-size: 12px;
+    }
+
+    .projects .project .card {
+        height: 250px;
+    }
+
+    .projects .project .card .card-body {
+        padding: 16px;
+    }
+
+    .projects .project .col-md-8 {
+        height: 250px;
+    }
 }
 
 
@@ -492,6 +522,24 @@ html, body {
     .hero .container img {
         height: 75%;
     }
+
+    .projects .project .card .card-body {
+        padding: 12px;
+    }
+
+    .projects .card-title {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .projects .card-text {
+        font-size: 10px;
+    }
+
+    .projects .card .row2 {
+        padding-top: 30px;
+    }
+
 }
 
 @media screen and (max-width: 996px) {
@@ -541,6 +589,27 @@ html, body {
     .reviews .row .col-md-3 {
         width: 100%;
         padding: 10px;
+    }
+
+    .projects .container-fluid {
+        padding: 0 75px;
+    }
+
+    .projects .card .row1 li i{
+        font-size: 16px;
+    }
+
+    .projects .card .card-text {
+        margin-bottom: 10px;
+    }
+
+    .projects .card .row1 {
+        padding: 0;
+    }
+
+    .projects .card .row2 {
+        font-size: 16px;
+        padding-top: 20px;
     }
 }
 
@@ -601,6 +670,12 @@ html, body {
     .hero .container img {
         height: 80%;
     }
+
+    
+    .projects .row {
+        flex-direction: column;
+        gap: 2em;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -614,6 +689,10 @@ html, body {
         padding: 10px 0;
     }
 
+    .projects .container-fluid {
+        padding: 0px 25px;
+    }
+
 }
 
 @media screen and (max-width: 440px) {
@@ -621,6 +700,9 @@ html, body {
         width: 100%;
     }
 
+    .projects .container-fluid {
+        padding: 0px 10px;
+    }
 }
 
 
